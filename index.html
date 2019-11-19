@@ -1,0 +1,359 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Camilo Castelo - Portfólio</title>
+
+<link href="css/normalize.css" rel="stylesheet" type="text/css">
+<link href="css/geral.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+
+<!--Parallax & Transições no rolamento vertical - Manter nessa ordem -->
+<script type="text/javascript" src="js/Parallax-Perso.js"></script>
+
+<!--LightBox -->
+<script type="text/javascript" src="js/lightbox-2.6.min.js"></script>
+<link href="css/lightbox.css" rel="stylesheet" />
+
+<!--Comando do rolamento pelo menu-->
+<script src="js/vertical-scroll.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+
+<link rel="shortcut icon" href="img/castle.ico">
+
+	<style id="kirki-styles-inline-css" type="text/css">
+		/* vietnamese */
+		@font-face {
+		  font-family: 'Dancing Script';
+		  font-style: normal;
+		  font-weight: 700;
+		  src: local('Dancing Script Bold'), local('DancingScript-Bold'), url(https://fonts.gstatic.com/s/dancingscript/v12/If2SXTr6YS-zF4S-kcSWSVi_szpbr_QlqiMurg.woff2) format('woff2');
+		  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+		}
+		/* latin-ext */
+		@font-face {
+		  font-family: 'Dancing Script';
+		  font-style: normal;
+		  font-weight: 700;
+		  src: local('Dancing Script Bold'), local('DancingScript-Bold'), url(https://fonts.gstatic.com/s/dancingscript/v12/If2SXTr6YS-zF4S-kcSWSVi_szpbr_QkqiMurg.woff2) format('woff2');
+		  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+		}
+		/* latin */
+		@font-face {
+		  font-family: 'Dancing Script';
+		  font-style: normal;
+		  font-weight: 700;
+		  src: local('Dancing Script Bold'), local('DancingScript-Bold'), url(https://fonts.gstatic.com/s/dancingscript/v12/If2SXTr6YS-zF4S-kcSWSVi_szpbr_QqqiM.woff2) format('woff2');
+		  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+		}
+		/* vietnamese */
+		@font-face {
+		  font-family: 'Patrick Hand';
+		  font-style: normal;
+		  font-weight: 400;
+		  src: local('Patrick Hand'), local('PatrickHand-Regular'), url(https://fonts.gstatic.com/s/patrickhand/v13/LDI1apSQOAYtSuYWp8ZhfYe8UcLLq7s.woff2) format('woff2');
+		  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+		}
+		/* latin-ext */
+		@font-face {
+		  font-family: 'Patrick Hand';
+		  font-style: normal;
+		  font-weight: 400;
+		  src: local('Patrick Hand'), local('PatrickHand-Regular'), url(https://fonts.gstatic.com/s/patrickhand/v13/LDI1apSQOAYtSuYWp8ZhfYe8UMLLq7s.woff2) format('woff2');
+		  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+		}
+		/* latin */
+		@font-face {
+		  font-family: 'Patrick Hand';
+		  font-style: normal;
+		  font-weight: 400;
+		  src: local('Patrick Hand'), local('PatrickHand-Regular'), url(https://fonts.gstatic.com/s/patrickhand/v13/LDI1apSQOAYtSuYWp8ZhfYe8XsLL.woff2) format('woff2');
+		  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+		}
+		/* vietnamese */
+		@font-face {
+		  font-family: 'Patrick Hand SC';
+		  font-style: normal;
+		  font-weight: 400;
+		  src: local('Patrick Hand SC'), local('PatrickHandSC-Regular'), url(https://fonts.gstatic.com/s/patrickhandsc/v7/0nkwC9f7MfsBiWcLtY65AWDK873lgSK7FQc.woff2) format('woff2');
+		  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+		}
+		/* latin-ext */
+		@font-face {
+		  font-family: 'Patrick Hand SC';
+		  font-style: normal;
+		  font-weight: 400;
+		  src: local('Patrick Hand SC'), local('PatrickHandSC-Regular'), url(https://fonts.gstatic.com/s/patrickhandsc/v7/0nkwC9f7MfsBiWcLtY65AWDK873lgCK7FQc.woff2) format('woff2');
+		  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+		}
+		/* latin */
+		@font-face {
+		  font-family: 'Patrick Hand SC';
+		  font-style: normal;
+		  font-weight: 400;
+		  src: local('Patrick Hand SC'), local('PatrickHandSC-Regular'), url(https://fonts.gstatic.com/s/patrickhandsc/v7/0nkwC9f7MfsBiWcLtY65AWDK873ljiK7.woff2) format('woff2');
+		  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+		}
+		/* latin */
+		@font-face {
+		  font-family: 'Six Caps';
+		  font-style: normal;
+		  font-weight: 400;
+		  src: local('Six Caps'), local('SixCaps'), url(https://fonts.gstatic.com/s/sixcaps/v10/6ae_4KGrU7VR7bNmaYcV_3Q.woff2) format('woff2');
+		  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+		}
+	</style>
+</head>
+
+<body>
+
+<header id="home">
+<div id="dinamicNav">
+    <div id="slider">
+	<nav>
+	<div class="menu">
+		<a id="Mhome" class="origMH" data-title="Início" href="#home"></a>
+		<a id="Mgal" class="origMG" data-title="Galeria" href="#gal"></a>
+		<a id="Mtex" class="origMT" data-title="Sobre" href="#tex"></a>
+		<a id="Mcont" class="origMC" data-title="Contato" href="#cont"></a>
+	</div>
+	</nav>
+	<div id="filler"></div>
+    </div>
+</div>
+
+</header>
+
+
+<section>
+
+<div class="bgParallax" id="portfolio" data-speed="1.5">
+	<h3 class="originalB"><div class="tit2a"><div class="tit3">um pouco&nbsp;</div><div class="tit3">do que&nbsp;</div></div><div class="tit2b">tenho feito</div></h3>
+</div>
+
+<div class="fgParallax" id="gal">
+<article>
+				<div id="galeria">
+					<h2>Manual de Identidade Visual do Verdeluz</h2>
+					<h4>- clique para ver o projeto</h4>
+					<a class="destaque" href="https://www.behance.net/gallery/18728479/Manual-de-Identidade-Visual-Verdeluz" title="Manual de identidade visual do Verdeluz" alt="Manual de identidade visual do Verdeluz" target="_blank">
+						<div>
+							<img src="img/Portfolio/MIV.jpg">
+						</div>
+						<div class="filtro"></div>
+					</a>
+					<h2>Cartazes, ilustrações e outros </h2>
+					<h4>- clique para expandir</h4>
+					<div id="xadrez">
+					<a href="img/Portfolio/JMJ.jpg" data-lightbox="roadtrip" alt="Cartaz de divulgação da Jornada Mundial da Juventude com o Papa no Brasil. Cliente: Arquidiocese da Tunísia">
+						<div>
+							<img src="img/Portfolio/JMJPq.jpg">
+						</div>
+						<div class="filtro"></div>
+					</a>
+					<a href="img/Portfolio/EncVerde.jpg" data-lightbox="roadtrip" alt="Divulgação de evento em post de Facebook. - Desenho à mão livre e cores em Photoshop.">
+						<div>
+							<img src="img/Portfolio/EncVerdePq.jpg">
+						</div>
+						<div class="filtro"></div>
+					</a>
+					<a href="img/Portfolio/LimPraia.jpg" data-lightbox="roadtrip" alt="Capa de evento em Facebook. - Desenho à mão livre e cores em Photoshop.">
+						<div>
+							<img src="img/Portfolio/LimPraiaPq.jpg">
+						</div>
+						<div class="filtro"></div>
+					</a>
+					<a href="img/Portfolio/Pagina.png" data-lightbox="roadtrip" alt="Capa para página de Facebook.">
+						<div>
+							<img src="img/Portfolio/PaginaPq.jpg">
+						</div>
+						<div class="filtro"></div>
+					</a>
+					<a href="img/Portfolio/Cartao.jpg" data-lightbox="roadtrip" alt="Cartão de visita.">
+						<div>
+							<img src="img/Portfolio/CartaoPq.jpg">
+						</div>
+						<div class="filtro"></div>
+					</a>
+					<a href="img/Portfolio/Logo.jpg" data-lightbox="roadtrip" alt="Redesenho de Logotipo.">
+						<div>
+							<img src="img/Portfolio/LogoPq.jpg">
+						</div>
+						<div class="filtro"></div>
+					</a>
+					<a href="img/Portfolio/ArtCraft.png" data-lightbox="roadtrip" alt="Homenagem ao movimento artístico inglês. - Illustrator">
+						<div>
+							<img src="img/Portfolio/ArtCraftPq.png">
+						</div>
+						<div class="filtro"></div>
+					</a>
+					<a href="img/Portfolio/Ciclo.jpg" data-lightbox="roadtrip" alt="Infográfico descrevendo o ciclo de vida de uma embalagem de papelão. - Ícones baixados da web e ciclo elaborado no Illustrator.">
+						<div>
+							<img src="img/Portfolio/CicloPq.jpg">
+						</div>
+						<div class="filtro"></div>
+					</a>
+					<a href="img/Portfolio/Grito.JPG" data-lightbox="roadtrip" alt="Releitura da obra 'O Grito', de Edvard Munch. - Lápis aquarelável e caneta nanquim">
+						<div>
+							<img src="img/Portfolio/GritoPq.JPG">
+						</div>
+						<div class="filtro"></div>
+					</a>
+					<a href="img/Portfolio/SemDes.png" data-lightbox="roadtrip" alt="Sugestão de cartaz para evento - Illustrator">
+						<div>
+							<img src="img/Portfolio/SemDesPq.png">
+						</div>
+						<div class="filtro"></div>
+					</a>
+					<a href="img/Portfolio/DesGarota.png" data-lightbox="roadtrip" alt="Desenho digital. - Photoshop">
+						<div>
+							<img src="img/Portfolio/DesGarotaPq.jpg">
+						</div>
+						<div class="filtro"></div>
+					</a>
+					<a href="img/Portfolio/bob-esponja.jpg" data-lightbox="roadtrip" alt="Aplicação de cores em personagem e montagem com figura ao fundo - Photoshop">
+						<div>
+							<img src="img/Portfolio/bob-esponjaPq.jpg">
+						</div>
+						<div class="filtro"></div>
+					</a>
+					<a href="img/Portfolio/TeEncontra.png" data-lightbox="roadtrip" alt="Sugestão de cartaz para a música 'Te Encontra' do Cidadão Instigado. Montagens e ilustração - Photoshop">
+						<div>
+							<img src="img/Portfolio/TeEncontraPq.png">
+						</div>
+						<div class="filtro"></div>
+					</a>
+					<a href="img/Portfolio/PinturaPraia.jpg" data-lightbox="roadtrip" alt="Pintura digital. - Photoshop">
+						<div>
+							<img src="img/Portfolio/PinturaPraiaPq.jpg">
+						</div>
+						<div class="filtro"></div>
+					</a>
+					<a href="img/Portfolio/Cinemagraph.gif" data-lightbox="roadtrip" alt="Estudo da técnica de Cinemagraph. - Sony Vegas e Photoshop">
+						<div>
+							<img src="img/Portfolio/CinemagraphPq.jpg">
+						</div>
+						<div class="filtro"></div>
+					</a>
+					<!-- itens independentes c/links externos -->
+					<a href="https://vimeo.com/110638152" title="Edição de vídeo - Photoshop e After Effects" target="_blank">
+						<div>
+							<img src="img/Portfolio/X-semana.jpg">
+						</div>
+						<div class="filtro"></div>
+					</a>
+					<!-- Nova Imagem na galeria 
+					<a href= data-lightbox="roadtrip" alt="">
+						<div><img src= ></div>
+						<div class="filtro">
+						</div>
+					</a>
+					-->
+					</div>
+				</div>
+			</article>
+</div>
+
+
+<div class="bgParallax" id="sobre" data-speed="1.5">
+	<h3 class="colorT1 originalC"><div class="tit2a">caminhos por&nbsp;</div><div class="tit2b">onde passei</div></h3>
+</div>
+
+<div class="fgParallax" id="tex">
+<article>
+				<div class="texto">
+					<h2>Olá! Eu me chamo Camilo Castelo</h2>
+					<div class="perfil"></div>
+					<p>Trabalhei um bom tempo em um asilo para idosos em Israel. Dediquei um outro tempo a algumas crianças com deficiências na Tunísia. Me lancei em algumas atividades de comunicação na França. Por onde passei tentei fazer parte da vida das pessoas e permitir que elas fizessem a diferença na minha.</p>
+					<p>De volta ao Brasil iniciei estudos na área do design gráfico, trabalhei alguns meses com e-mail marketing na então <a href="https://www.youtube.com/watch?v=JkBQnqzOHW4">Occiuzi 3D</a>, com prospecção de clientes na <a href="http://abracadabradesign.com.br/">Abracadabra Design</a> e com produção de vídeo aulas para o <a href="https://www.youtube.com/channel/UCNjPniJ9bZuCDQXCRqNsCBQ">Sistema Ari de Sá</a>.</p>
+				</div>
+				<h2>Habilidades que tenho desenvolvido</h2>
+				<div id="Ferramentas">
+					<div class="Frrmnt">
+						<h4>Desenho à mão livre</h4>
+						<div class="DsF FCheio Seco"></div>
+						<div class="FCover"></div>
+					</div>
+					<div class="Frrmnt">
+						<h4>Photoshop</h4>
+						<div class="PsF FCheio Seco"></div>
+						<div class="FCover"></div>
+					</div>
+					<div class="Frrmnt">
+						<h4>Illustrator</h4>
+						<div class="IlF FCheio Seco"></div>
+						<div class="FCover"></div>
+					</div>
+					<div class="Frrmnt">
+						<h4>Dreamweaver</h4>
+						<div class="DwF FCheio Seco"></div>
+						<div class="FCover"></div>
+					</div>
+					<div class="Frrmnt">
+						<h4>Html5 &amp; Css3</h4>
+						<div class="HCF FCheio Seco"></div>
+						<div class="FCover"></div>
+					</div>
+					<div class="Frrmnt">
+						<h4>Branding</h4>
+						<div class="BdF FCheio Seco"></div>
+						<div class="FCover"></div>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+			</article>
+</div>
+
+</section>
+
+<footer id="cont">
+		<h2 style="text-align:center; margin-bottom: 40px;">
+		Vamos trocar uma ideia:
+	</h2>
+		<div class="info" style="font-size: 24px; text-align: center;">(85) 98982-1772</div>
+	</footer>
+
+<script type="text/javascript">//<![CDATA[ 
+
+// Inserir a classe "originalX" no HTML e especificar a mudança com .modificadaX no CSS
+
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+	
+	//Marcadores do item ativo do menu
+    if (scroll <= 590) {
+        $(".origMH").addClass("modM");
+    } else {
+        $(".origMH").removeClass("modM");
+    }
+    if (scroll >= 591 && scroll <= 2350) {
+        $(".origMG").addClass("modM");
+    } else {
+        $(".origMG").removeClass("modM");
+    }
+    if (scroll >= 2351 && scroll <= 3600) {
+        $(".origMT").addClass("modM");
+    } else {
+        $(".origMT").removeClass("modM");
+    }
+    if (scroll >= 3601) {
+        $(".origMC").addClass("modM");
+    } else {
+        $(".origMC").removeClass("modM");
+    }
+
+	//Enchedor dos medidores de habilidades
+    if (scroll <= 1900) {
+        $(".FCheio").addClass("Seco");
+    } else {
+        $(".FCheio").removeClass("Seco");
+    }
+
+});
+//]]>  
+
+</script>
+
+</body>
+</html>
